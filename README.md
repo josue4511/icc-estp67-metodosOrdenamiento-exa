@@ -218,9 +218,7 @@ No encontrada
 
 ```
 [COPIE AQUÍ LA SALIDA COMPLETA DE LA CONSOLA]
-```
-
----
+===== ORIGINAL ===== Honda - Años válidos: 6 Toyota - Años válidos: 10 Ford - Años válidos: 5 Chevrolet - Años válidos: 8 Nissan - Años válidos: 7 Mazda - Años válidos: 12 Hyundai - Años válidos: 8 ===== ORDENADO ASCENDENTE (Selection Sort) ===== Ford - Años válidos: 5 Honda - Años válidos: 6 Nissan - Años válidos: 7 Chevrolet - Años válidos: 8 Hyundai - Años válidos: 8 Toyota - Años válidos: 10 Mazda - Años válidos: 12 ===== BUSQUEDAS FILA B ===== Buscar 7 años válidos: Encontrado: Nissan - Años válidos: 7 Buscar 5 años válidos: Encontrado: Ford - Años válidos: 5
 
 
 
