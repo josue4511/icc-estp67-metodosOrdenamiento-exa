@@ -14,7 +14,6 @@ public class CarYear {
         return year;
     }
 
-    public boolean isValid() {
+    public boolean isValid
         return isValid;
     }
-}
