@@ -18,12 +18,7 @@ public class Brand {
         return models;
     }
 
-    @return
-
-    número total
-    de años
-    con isValid = true
-
+    
     public int getTotalValidYears() {
         int total = 0;
 
@@ -33,6 +28,7 @@ public class Brand {
         for (CarModel m : models) {
             if (m.getYears() == null)
                 continue;
+
             for (CarYear y : m.getYears()) {
                 if (y.isValid())
                     total++;
@@ -46,3 +42,4 @@ public class Brand {
         return name + " - Años válidos: " + getTotalValidYears();
     }
 }
+
