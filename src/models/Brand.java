@@ -4,51 +4,56 @@ import java.util.Arrays;
 
 public class Brand {
   private String brandName;
-  private CarModel[] carModels;
+  private CarModel[] models;
 
- 
-  public Brand(String brandName, CarModel[] carModels) {
-    this.brandName = brandName;
-    this.carModels = carModels;
-  }
-  
   public String getBrandName() {
     return brandName;
   }
 
-  public void setBrandName(String brandName) {
+  public CarModel[] getModels() {
+    return models;
+  }
+
+  public void setBrand(String brandName) {
     this.brandName = brandName;
   }
 
-  public CarModel[] getCarModels() {
-    return carModels;
+  public void setModels(CarModel[] models) {
+    this.models = models;
   }
 
-  public void setCarModels(CarModel[] carModels) {
-    this.carModels = carModels;
+  public Brand(String brandName, CarModel[] models) {
+    this.brandName = brandName;
+    this.models = models;
   }
 
-    public int getTotalValidYears() {
-        int n = 0;
-        for (CarModel model : carModels) {
-          for (CarYear year : model.getCarYear()) {
-              if (year.isValid()) {
-                   n++;
-                  }
-              }
-          }
-            
-        
+  @Override
+  public String toString() {
+    return "Brand [brand=" + brandName + ", models=" + Arrays.toString(models) + "]";
+  }
 
-        return n;
+  public int getTotalValidYears() {
+    int total = 0;
+    int i = 0;
+
+    while (i < this.models.length) {
+      CarModel modelo = this.models[i];
+      int j = 0;
+
+      while (j < modelo.getYears().length) {
+        CarYear year = modelo.getYears()[j];
+
+        if (year.isValid()) {
+          total = total + 1;
+        }
+
+        j = j + 1;
       }
-    
 
-    @Override
-    public String toString() {
-      return "Brand [brandName=" + brandName + ", carModels=" + Arrays.toString(carModels) + "]";
+      i = i + 1;
     }
-    
+
+    return total;
   }
-   
-  
+
+}

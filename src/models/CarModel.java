@@ -3,27 +3,33 @@ package models;
 import java.util.Arrays;
 
 public class CarModel {
+
   private String modelName;
-  private CarYear[] carYear;
-  public CarModel(String modelName, CarYear[] carYear) {
-    this.modelName = modelName;
-    this.carYear = carYear;
-  }
+  private CarYear[] years;
+
   public String getModelName() {
     return modelName;
   }
+
   public void setModelName(String modelName) {
     this.modelName = modelName;
   }
-  public CarYear[] getCarYear() {
-    return carYear;
+
+  public CarYear[] getYears() {
+    return years;
   }
-  public void setCarYear(CarYear[] carYear) {
-    this.carYear = carYear;
+
+  public void setYears(CarYear[] years) {
+    this.years = years;
   }
+
   @Override
   public String toString() {
-    return "CarModel [modelName=" + modelName + ", carYear=" + Arrays.toString(carYear) + "]";
+    return "CarModel [modelName=" + modelName + ", years=" + Arrays.toString(years) + "]";
   }
-  
+
+  public CarModel(String modelName, CarYear[] years) {
+    this.modelName = modelName;
+    this.years = years;
+  }
 }
