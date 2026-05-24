@@ -88,8 +88,8 @@ Cada fila deberá utilizar el método `binarySearchByValidYears` para buscar dos
 **ANTES DE COMENZAR**, debe configurar el archivo `student.env` con sus datos:
 
 ```env
-STUDENT_NAME=SU-NOMBRE-COMPLETO
-STUDENT_EMAIL=su.email@est.ups.edu.ec
+STUDENT_NAME= Josue Calle
+STUDENT_EMAIL= ccallei@est.ups.edu.ec
 FILA_ESTUDIANTE=A
 ```
 
